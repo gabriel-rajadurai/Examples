@@ -1,0 +1,15 @@
+com.example.administrator.test
+com.example.administrator.test.adapters
+com.example.administrator.test.changemaker_test
+com.example.administrator.test.changemaker_test.changemaker_fragments
+com.example.administrator.test.common
+com.example.administrator.test.contacts_sql
+com.example.administrator.test.contacts_sql.fragments
+com.example.administrator.test.cooperfit_test
+com.example.administrator.test.custom_toolbar
+com.example.administrator.test.custom_toolbar.fragments
+com.example.administrator.test.fragments
+com.example.administrator.test.navdrawer_test
+com.example.administrator.test.scroll_layout_test
+com.example.administrator.test.sqlite_test
+com.rapidbizapps.android.pickAPic

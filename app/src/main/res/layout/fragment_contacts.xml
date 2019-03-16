@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.test.contacts_sql.fragments.ContactsFragment">
+
+    <EditText
+        android:id="@+id/et_contactsSearch"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Type to start searching..."
+        android:background="@drawable/scroll_layout_background"
+        android:textColor="@color/mdtp_white"
+        android:textColorHint="@color/mdtp_white"
+        android:textStyle="italic"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/et_contactsSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contacts_rView"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

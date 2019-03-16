@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context="com.example.administrator.test.sqlite_test.SqlActivity">
+
+    <TextView
+        android:id="@+id/tv_sqlTitle"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="SQL database"
+        android:textColor="@color/mdtp_white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_sqlInsert"
+        android:layout_below="@id/tv_sqlTitle"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Insert"
+        android:textColor="@color/mdtp_white"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/insert_form"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sqlInsert"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_sqlName"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:hint="  Enter name.."
+            android:textStyle="italic"
+            android:textSize="16dp"
+            android:background="@color/mdtp_white"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/et_sqlAge"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:hint="  Enter age.."
+            android:textStyle="italic"
+            android:textSize="16dp"
+            android:background="@color/mdtp_white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_insertSql"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/insert_form"
+        android:layout_centerHorizontal="true"
+        android:text="Insert"/>
+
+    <LinearLayout
+        android:id="@+id/update_form"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_insertSql"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/mdtp_white"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sqlInsert"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/et_sqlupdateName"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:hint="  Enter name.."
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:background="@color/mdtp_white"/>
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/et_sqlupdateAge"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:hint="  Enter age.."
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:background="@color/mdtp_white"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/bt_updateSql"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Update"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_form"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get from DB"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/mdtp_white"/>
+
+
+        <LinearLayout
+            android:id="@+id/get_form"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sqlInsert"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/et_sqlgetName"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:hint="  Enter name.."
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:background="@color/mdtp_white"/>
+
+            <TextView
+                android:id="@+id/tv_sqlgetAge"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:text="Age: "
+                android:textStyle="italic"
+                android:textColor="@color/mdtp_white"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/bt_getSql"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Get from DB"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_dropSql"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Delete DB"/>
+
+
+
+
+
+</RelativeLayout>

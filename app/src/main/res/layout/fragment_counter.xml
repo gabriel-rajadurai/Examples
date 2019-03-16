@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.test.fragments.CounterFragment"
+    tools:ignore="MissingPrefix">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/cnt"
+        fontPath="fonts/Roboto-Bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:text="00"
+        android:textAlignment="center"
+        android:textSize="70dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnt"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add"
+            fonPath="fonts/Montserrat-SemiBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="50"
+            android:textAlignment="center"
+            android:text="+"
+            android:textSize="35dp"/>
+
+        <Button
+            android:id="@+id/remove"
+            fonPath="fonts/Montserrat-SemiBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="50"
+            android:textAlignment="center"
+            android:text="-"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLayout"
+        android:weightSum="3"
+        android:gravity="end">
+        <Button
+            android:id="@+id/back"
+            android:layout_weight="1"
+            fonPath="fonts/Montserrat-SemiBold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_weight="1"
+            fonPath="fonts/Montserrat-SemiBold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

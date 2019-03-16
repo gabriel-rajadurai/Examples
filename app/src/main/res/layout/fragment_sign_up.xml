@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.test.fragments.SignUpFragment"
+    android:background="#22262b">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:text="Register "
+        android:id="@+id/tv_registerTitle"
+        android:textColor="@color/mdtp_white"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="Full name..."
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:layout_below="@+id/tv_registerTitle"
+        android:layout_centerHorizontal="true"
+        android:background="#EAEAEA"
+        android:id="@+id/et_fName"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email..."
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:layout_below="@+id/et_fName"
+        android:layout_centerHorizontal="true"
+        android:background="#EAEAEA"
+        android:id="@+id/et_email"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Group code..."
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:background="#EAEAEA"
+        android:id="@+id/et_groupID"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Date of Birth..."
+        android:inputType="date"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:layout_below="@+id/et_groupID"
+        android:layout_centerHorizontal="true"
+        android:background="#EAEAEA"
+        android:id="@+id/et_dob"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:layout_below="@+id/et_dob"
+        android:layout_centerHorizontal="true"
+        android:background="#EAEAEA"
+        android:id="@+id/et_pass"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/et_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Create Account"
+        android:id="@+id/bt_createAccount"/>
+
+</RelativeLayout>

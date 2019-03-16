@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.test">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".TestApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FragActivity" />
+        <activity android:name=".cooperfit_test.LoginCooperfitActivity" />
+        <activity
+            android:name=".cooperfit_test.ProfileCooperfitActivity"
+            android:label="@string/title_activity_profile_cooperfit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".changemaker_test.ChangeMaker_main" />
+        <activity android:name=".changemaker_test.IntroActivity" />
+        <activity android:name=".custom_toolbar.CustomToolbarActivity" />
+        <activity android:name=".navdrawer_test.NavDrawerActivity" />
+        <activity android:name=".scroll_layout_test.ScrollLayoutActivity" />
+        <activity android:name=".sqlite_test.SqlActivity" />
+        <activity android:name=".contacts_sql.ContactsMainActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.test.changemaker_test.changemaker_fragments.IntroFragment"
+    android:weightSum="3"
+    android:background="@color/mdtp_white"
+    android:orientation="vertical"
+    tools:ignore = "MissingPrefix">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/tv_introLabel"
+        android:layout_marginTop="20dp"
+        fontpath = "fonts/Montserrat-Light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/mdtp_light_gray"
+        android:layout_weight="0.5"
+        android:textSize="23dp"
+        android:text="Be heroic\nBe a ChangeMaker"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/img_introScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/intro_one"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro_gradient"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

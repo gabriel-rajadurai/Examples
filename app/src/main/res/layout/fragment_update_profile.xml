@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.test.fragments.UpdateProfileFragment"
+    android:background="#22262b"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Update profile"
+        android:textSize="20dp"
+        android:layout_weight="0.8"
+        android:textColor="@color/mdtp_white"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        android:id="@+id/et_updateEmail"
+        android:layout_marginBottom ="10dp"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_weight="0.05"
+        android:background="#EAEAEA"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:hint="Email..."
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/et_updateFname"
+        android:layout_marginBottom ="10dp"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_weight="0.05"
+        android:background="#EAEAEA"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:hint="Full name..."
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/et_updateDOB"
+        android:layout_marginBottom ="10dp"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_weight="0.05"
+        android:background="#EAEAEA"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:hint="Date of birth..."
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/et_updateGender"
+        android:layout_marginBottom ="5dp"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:layout_weight="0.05"
+        android:background="#EAEAEA"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:hint="Gender..."
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/bt_saveProfile"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        android:text="Save"/>
+
+
+    <Button
+        android:id="@+id/bt_cancelChanges"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:text="Cancel"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>

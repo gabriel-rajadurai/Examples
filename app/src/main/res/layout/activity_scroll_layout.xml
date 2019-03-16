@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.test.scroll_layout_test.ScrollLayoutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/scroll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/primaryColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/mdtp_white"
+            android:text="Home"
+            android:textSize="23dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/bt_scrlOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ok" />
+
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:id="@+id/scroll_view"
+        android:layout_below="@+id/scroll_toolbar"
+        android:layout_above="@id/bt_scrlOk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scroll_layout_background">
+
+        <include layout="@layout/scrl_loginlayout"/>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
